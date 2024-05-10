@@ -274,7 +274,7 @@ def makeAnimLayer(layerName="animLayer",overrideMode=True):
     return animLayerName
 
 ## spacePin interface - run this module!
-def spacePinUI():
+def UI():
     if cmds.window("spacePin", exists=True):
         cmds.deleteUI("spacePin", window=True)
     if cmds.windowPref("spacePin", exists=True):
@@ -319,5 +319,3 @@ def spacePinUI():
     cmds.button( label="Re-Parent Selected Objects", w=400, h=50, command=sPinExecute )
  
     cmds.showWindow()
-    
-spacePinUI()
