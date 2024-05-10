@@ -72,8 +72,6 @@ def spEnableDisable(fieldName="layerName"):
     currentStatus = cmds.textField(fieldName, q=True, en=True)
     newValue = bool(0 if currentStatus else 1)
     cmds.textField(fieldName, e=True, en=newValue)
-   
-spacePinUI()
 
 ## space pin main
 def sPinExecute(*args):
