@@ -6,12 +6,16 @@ Drop the spacePin.py file into your maya scripts folder.
 
 Refresh Maya or your code cache with this python code:
 
+```
 #rehash command
 import maya.mel as mel
 mel.eval('rehash;')
+```
 
 Run the script with this python code:
 
+```
 #spacePin
 import spacePin
 spacePin.UI()
+```
